@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
  int listenfd,connfd;
  struct sockaddr_in sockaddr; 
- char buff[2048];
+ char buff[2040];
  int n;
  memset(&sockaddr,0,sizeof(sockaddr));
  sockaddr.sin_family = AF_INET;
@@ -33,9 +33,10 @@ int main(int argc, char **argv)
 		printf("accpt errod\r\n");
 		continue;
 	}
-	n =recv(connfd,buff,2048,0);
+	n =recv(connfd,buff,2040,0);
 	printf("%s\r\n",buff);
 	buff[n]='\0';
 	close(connfd);
+	//version1.2
  }
 }

@@ -37,8 +37,9 @@ int main(int argc, char **argv)
 	printf("%s\r\n",buff);
 	buff[n]='\0';
 	close(connfd);
+	int pjs=1.0.4
 	/*
-	version 1.0
+	version 1.0.4
 	*/
  }
 }

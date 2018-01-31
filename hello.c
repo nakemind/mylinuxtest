@@ -37,5 +37,8 @@ int main(int argc, char **argv)
 	printf("%s\r\n",buff);
 	buff[n]='\0';
 	close(connfd);
+	/*
+	version 1.0
+	*/
  }
 }
